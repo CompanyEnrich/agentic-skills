@@ -8,49 +8,14 @@ Powered by [CompanyEnrich](https://companyenrich.com) APIs.
 
 | Skill | Description |
 |-------|-------------|
-| **Lead Research Agent** | Full-pipeline lead research by email — person lookup, company enrichment, workforce trends |
+| [Lead Research Agent](lead-research-agent/) | Full-pipeline lead research by email — person lookup, company enrichment, workforce trends |
 
 ## Quick Start
 
-### 1. Get a CompanyEnrich API key
-
-Sign up at [companyenrich.com](https://companyenrich.com) and grab your API key.
-
-### 2. Install a skill
-
-Download the `.skill` file and install it in Claude Code:
-
-```
-/skill install lead-research-agent.skill
-```
-
-### 3. Use it
-
-Just ask Claude to research a lead:
-
-```
-Research john@acme.com
-```
-
-```
-Who is sarah@startup.io?
-```
-
-```
-Enrich this contact: mike@bigcorp.com
-```
-
-The skill handles the rest — it runs a reverse email lookup, enriches the company, pulls workforce data, and presents a clean report.
-
-## What You Get
-
-### Lead Research Agent
-
-Given an email address, this skill calls three CompanyEnrich API endpoints and builds a structured report:
-
-- **Person** — Name, title, seniority, department, location, LinkedIn
-- **Company** — Description, categories, funding history (rounds, investors, amounts)
-- **Workforce** — Department headcount breakdown, employee count, and trend analysis (flags departments with >15% headcount changes)
+1. Sign up at [companyenrich.com](https://companyenrich.com) and grab your API key
+2. Pick a skill from the table above
+3. Install it in Claude Code: `/skill install <skill-file>.skill`
+4. Start using it — Claude handles the rest
 
 ## Requirements
 
